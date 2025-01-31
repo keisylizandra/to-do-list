@@ -1,0 +1,10 @@
+.header {
+    background: linear-gradient(to bottom, #87CEFA, #1F4494);
+    padding: 20px;
+    text-align: center;
+    height: 25%; 
+  }
+  
+  .header h1 {
+    color: #fff;
+  }

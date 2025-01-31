@@ -1,0 +1,27 @@
+.booking-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #004b71;
+    border-radius: 5px;
+    padding: 10px;
+    width: 55%;
+}
+
+.booking-title {
+    background-color: #004b71;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.booking-input {
+    border: none;
+    flex: 1;
+    padding: 5px;
+    outline: none;
+}
+
+.date-picker-container .booking-input {
+    width: auto; /* Ajuste a largura conforme necessário para o DatePicker */
+  }

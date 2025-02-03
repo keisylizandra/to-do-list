@@ -1,10 +1,10 @@
 .booking-box {
     display: flex;
     align-items: center;
-    border: 2px solid #004b71;
     border-radius: 5px;
-    padding: 10px;
-    width: 55%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .booking-title {
@@ -12,16 +12,29 @@
     color: white;
     font-weight: bold;
     padding: 10px;
-    border-radius: 3px 0 0 3px;
+    border-radius: 7px 0 0 7px;
+    width: 200px;
+    border: #004b71 solid 2px;
+}
+
+.travel-selector {
+    margin-top: 5%;
 }
 
 .booking-input {
     border: none;
     flex: 1;
-    padding: 5px;
     outline: none;
+    margin: 5px 0;
+    border: #004b71 solid 2.5px;
+    border-radius: 0 7px 7px 0;
 }
 
-.date-picker-container .booking-input {
-    width: auto; /* Ajuste a largura conforme necessário para o DatePicker */
-  }
+.css-19bb58m {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+.css-13cymwt-control {
+    border-radius: 0 4px 4px 0 !important; 
+}

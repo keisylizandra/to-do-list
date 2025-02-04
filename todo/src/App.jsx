@@ -1,10 +1,10 @@
 //import { useState } from 'react'
-
+import { Grid } from '@mui/material'
 import Booking from './components/Booking/Booking'
 import Header from './components/Header/Header'
+import Planner from './components/Planner/Planner';
 
 import './App.css';
-import CheckboxesGroup from './components/CheckboxesGroup/CheckboxesGroup';
 
 function App() {
 
@@ -13,9 +13,8 @@ function App() {
     <Header />
 
     <div className='screen'>
-
     <Booking />
-    <CheckboxesGroup />
+    <Planner />
 
     </div>
   </div>

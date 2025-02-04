@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 .screen {
-    background-color: antiquewhite;
     max-width: 1200px;
     justify-content: center;
     margin: 0 auto;
+    font-family: 'Sora', sans-serif;
 }
 

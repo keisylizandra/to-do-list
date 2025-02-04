@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.my-box {
+    font-family: 'Sora', sans-serif;
+    border: #15648b solid;
+    border-right: none;
+    margin-top: 50px;
+    min-height: 525px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    padding: 35px;
+    text-align: center;
+    font-weight: 650;
+    font-size: large;
+    border-bottom: #15648b solid;
+}
+
+.form-items {
+    background-color: #eafaff;
+    padding: 15px;
+}
+
+.css-rizt0-MuiTypography-root {
+
+    font-family: "Sora", sans-serif!important;
+
+}
+
+.css-nwsdb5-MuiFormLabel-root {
+    
+    font-family: "Sora", sans-serif!important; 
+    font-weight: 700!important;
+}
+
+.border {
+    border: #15648b solid;
+}

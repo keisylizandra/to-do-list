@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Planner from './components/Planner/Planner';
 
 import './App.css';
+import NextTravelBox from './components/NextTravelBox/NextTravelBox';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
     <div className='screen'>
     <Booking />
     <Planner />
-
+    <NextTravelBox />
+    
     </div>
   </div>
   )

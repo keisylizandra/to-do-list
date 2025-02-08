@@ -1,11 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import FormLabel from "@mui/material/FormLabel";
-import FormControl from "@mui/material/FormControl";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Button from "@mui/material/Button";
+import { Box, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox, ButtonBase } from '@mui/material';
+import { IoMdAdd } from "react-icons/io";
 
 import './CheckboxesGroup.css'
 
@@ -45,9 +40,11 @@ export default function CheckboxesGroup({ label, items, border, labelColor, boxB
             />
           ))}
         </FormGroup>
-        <Button className="form-button" variant="outlined" onClick={handleAddItem} >
-          Adicionar Item
-        </Button>
+        <ButtonBase className="form-button" onClick={handleAddItem} disableRipple>
+        <IoMdAdd />
+          Add Item
+        </ButtonBase>
+        
       </div>
     </div>
     

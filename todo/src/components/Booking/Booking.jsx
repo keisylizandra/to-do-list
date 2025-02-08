@@ -28,6 +28,7 @@ export default function Booking() {
     
     return(
         <div className="travel-selector">
+
             <div className="selector-row">
                 <BookingBox 
                 title="Destination State" 
@@ -35,8 +36,9 @@ export default function Booking() {
                 options={stateList} 
                 value={selectedState}
                 onChange={setSelectedState}
-                placeholder='Which state are you going?'/>
+                placeholder='Which state are you going?'/>                
             </div>
+            
             <div className="selector-row">
                 <BookingBox
                 title='Destination City'
@@ -45,6 +47,13 @@ export default function Booking() {
                 value={selectedCity}
                 onChange={setSelectedCity}
                 placeholder='Which city are you going?'
+                />
+            </div>
+
+            <div className="selector-row">
+            <BookingBox
+                title='Travel Date'
+                type='date'
                 />
             </div>
         </div>

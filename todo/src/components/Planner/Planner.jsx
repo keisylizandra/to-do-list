@@ -47,7 +47,7 @@ export default function Planner() {
 
         <Grid item lg={3} md={6} xs={12}>  
         <CheckboxesGroup 
-        label="Activities To Do" 
+        label="Essentials To Bring" 
         items={[
             { name: "Passport", checked: false },
             { name: "Flight tickets", checked: false },
@@ -66,7 +66,7 @@ export default function Planner() {
         
         <Grid item lg={3} md={6} xs={12}>  
         <CheckboxesGroup 
-        label="Activities To Do" 
+        label="Items To Pack" 
         items={[
             { name: "Clothes", checked: false },
             { name: "Shoes", checked: false },

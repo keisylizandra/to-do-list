@@ -1,0 +1,12 @@
+.big-box {
+    margin: 70px 0;
+    border: #004b71 solid 2.5px;
+    height: 200px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.big-box .booking-box .booking-title {
+    border-radius: 4px 0 0 0; /* Manter o border-radius nos outros cantos */
+    border-bottom-left-radius: 0;
+}

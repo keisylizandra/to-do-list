@@ -30,28 +30,30 @@ const BookingBox = ({ title, type, options = [], value, onChange, placeholder })
         ) : type === "date" ? (
 
             <div className='date-picker-container'>
-                <DatePicker 
+                <DatePicker
+                className="date-input"
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
                 selectsStart
                 startDate={startDate}
                 endDate={endDate}
-                className="booking-input"
+                placeholderText='Inicial Date'
                 />
+                <p className='text'>to</p>
                 <DatePicker
+                className="date-input"
                 selected={endDate}
                 onChange={(date) => setEndDate(date)}
                 startDate={startDate}
                 endDate={endDate}
-                minDate={startDate}
-                className="booking-input"
+                minDate={startDate} 
+                placeholderText='End Date'   
                 />
             </div>
 
         ) : (
 
-            <input type="text" className="booking-input" placeholder={placeholder}/>
-
+            <span className="random-text">{placeholder}</span>
         )}  
         </div>
     );

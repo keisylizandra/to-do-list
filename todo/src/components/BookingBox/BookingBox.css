@@ -1,7 +1,6 @@
 .booking-box {
     display: flex;
     align-items: center;
-    border-radius: 5px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -12,8 +11,8 @@
     color: white;
     font-weight: bold;
     padding: 10px;
-    border-radius: 7px 0 0 7px;
     width: 200px;
+    border-radius: 7px 0 0 7px;
     border: #004b71 solid 2px;
 }
 
@@ -37,4 +36,45 @@
 
 .css-13cymwt-control {
     border-radius: 0 4px 4px 0 !important; 
+}
+
+.date-picker-container {
+    display: flex;
+    border: none;
+    flex: 1;
+    outline: none;
+    margin: 5px 0;
+    border: #004b71 solid 2.5px;
+    border-radius: 0 7px 7px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.date-input {
+    margin: 0 40px;
+    align-items: center;
+    background-color: #93ccdc;
+    border: none;
+    border-radius: 50px;
+    padding: 4px;
+    justify-content: center;
+}
+
+.date-input input {
+    font-family: 'Sora', sans-serif; /* Fonte personalizada */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #004b71; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+}
+
+.random-text {
+    border: none;
+    flex: 1;
+    border-bottom: #004b71 solid 2.5px;
+    min-height: 45px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }

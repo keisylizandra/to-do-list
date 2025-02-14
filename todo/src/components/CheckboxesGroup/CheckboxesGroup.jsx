@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Box, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox, ButtonBase } from '@mui/material';
-import { IoMdAdd } from "react-icons/io";
+import { Box, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox} from '@mui/material';
+import { FaPen } from "react-icons/fa";
 
 import './CheckboxesGroup.css'
 
@@ -40,10 +40,11 @@ export default function CheckboxesGroup({ label, items, border, labelColor, boxB
             />
           ))}
         </FormGroup>
-        <ButtonBase className="form-button" onClick={handleAddItem} disableRipple>
-        <IoMdAdd />
-          Add Item
-        </ButtonBase>
+        <div className="spacer"></div>
+        <button className="form-button" style={{color: boxBgColor, backgroundColor: labelColor}} onClick={handleAddItem}>
+        <FaPen />
+        Add Item
+        </button>
         
       </div>
     </div>

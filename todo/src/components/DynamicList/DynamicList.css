@@ -1,6 +1,26 @@
 .box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 10px 40px;
-    max-width: 70%;
+}
+
+.travel-list {
+    align-self: start;
+    margin: 5px;
+}
+
+.button-box {
+    margin-top: 10px;
+    align-self: center;
+    color: white; /* Cor do texto do botão */
+    background-color: #15648b; /* Cor de fundo do botão */
+    border: none; /* Remover borda */
+    width: 120px;
+    padding: 5px 20px; /* Espaçamento interno */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Para alinhar o ícone e o texto */
+    justify-content: space-between;
 }

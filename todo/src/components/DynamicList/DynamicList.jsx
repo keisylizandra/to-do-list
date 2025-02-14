@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { autoPhrases } from '../../api/fetchCities';
+import { FaPen } from "react-icons/fa";
 
 import './DynamicList.css'
 
@@ -23,14 +24,10 @@ export default function DynamicList() {
                 ))}
             </ul>
 
-            <input 
-            className="input-box"
-            type="text"
-            placeholder="Add a new item..."
-            value={inputValue} 
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            />
+            <button className="button-box">
+                <FaPen />
+                Add Item
+            </button>
             
         </div>
     )  

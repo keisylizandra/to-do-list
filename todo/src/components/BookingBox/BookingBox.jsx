@@ -9,6 +9,7 @@ import "react-datepicker/dist/react-datepicker.css";
 const BookingBox = ({ title, type, options = [], value, onChange, placeholder }) => {
     const [startDate, setStartDate] = useState(null)
     const [endDate, setEndDate] = useState(null)
+    const today = new Date();
 
     const handleSelectChange = (selectedOption) => {
         onChange(selectedOption);
@@ -37,6 +38,7 @@ const BookingBox = ({ title, type, options = [], value, onChange, placeholder })
                 selectsStart
                 startDate={startDate}
                 endDate={endDate}
+                minDate={today}
                 placeholderText='Inicial Date'
                 />
                 <p className='text'>to</p>

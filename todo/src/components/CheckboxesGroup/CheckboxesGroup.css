@@ -5,12 +5,14 @@
     border: #15648b solid;
     border-right: none;
     margin-top: 50px;
-    min-height: 525px;
+    min-height: 550px;
+    justify-content: space-between;
 }
 
 .form-box {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .form-label {
@@ -24,6 +26,7 @@
 .form-items {
     background-color: #eafaff;
     padding: 15px;
+    min-height: 400px;
 }
 
 .css-rizt0-MuiTypography-root {
@@ -43,20 +46,21 @@
 }
 
 .form-button {
+    align-self: center;
     color: white; /* Cor do texto do botão */
     background-color: #15648b; /* Cor de fundo do botão */
     border: none; /* Remover borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px 0;
+    width: 140px;
+    padding: 8px 20px; /* Espaçamento interno */
+    border-radius: 50px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
     display: flex; /* Para alinhar o ícone e o texto */
     align-items: center; /* Para alinhar o ícone e o texto */
-    text-transform: none; /* Remover transformação de texto */
-    font-family: inherit; /* Herdar a fonte do pai */
     font-size: inherit; /* Herdar o tamanho da fonte do pai */
-    box-shadow: none; /* Remover sombra */
+    justify-content: space-between;
 }
 
 .form-button:hover {
-    background-color: #104a6b; /* Cor de fundo ao passar o mouse */
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
 }

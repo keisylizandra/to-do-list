@@ -58,6 +58,8 @@
     padding: 5px;
     text-align: center;
     font-style: italic;
+    font-family: 'Sora';
+    color: #004b71;
 }
 
 .random-text {

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Box, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox} from '@mui/material';
 import { FaPen } from "react-icons/fa";
 
@@ -7,6 +7,7 @@ import './CheckboxesGroup.css'
 export default function CheckboxesGroup({ label, items, border, labelColor, boxBgColor, formItemsBgColor}) {
 
   const [checkboxItems, setCheckboxItems] = React.useState(items);
+  const [newItemName, setNewItemName] = React.useState('')
 
   const handleChange = (index) => {
     setCheckboxItems((prev) =>
@@ -40,7 +41,7 @@ export default function CheckboxesGroup({ label, items, border, labelColor, boxB
             />
           ))}
         </FormGroup>
-        <div className="spacer"></div>
+        
         <button className="form-button" style={{color: boxBgColor, backgroundColor: labelColor}} onClick={handleAddItem}>
         <FaPen />
         Add Item

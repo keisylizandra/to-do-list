@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@200;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .header {
-    background: linear-gradient(to bottom, #87CEFA, #1F4494);
-    padding: 20px;
-    text-align: center;
-    height: 25%; 
+  display: flex;
+  background-color: #c8e0ec;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 230px; 
   }
   
-  .header h1 {
-    color: #fff;
-  }
+.container {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  display: flex;
+  color: #343434;
+  font-size: 90px;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+}

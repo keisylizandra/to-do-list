@@ -1,7 +1,8 @@
 .big-box {
     margin: 70px 0;
     border: #004b71 solid 2.5px;
-    height: 200px;
+    height: auto;
+    min-height: 150px;
     width: 100%;
     border-radius: 7px;
 }

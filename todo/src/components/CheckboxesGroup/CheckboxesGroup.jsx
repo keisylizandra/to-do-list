@@ -3,23 +3,32 @@ import { Box, FormControl, FormLabel, FormGroup, FormControlLabel, Checkbox} fro
 import { FaPen } from "react-icons/fa";
 
 import './CheckboxesGroup.css'
+import ModalBox from "../ModalBox/ModalBox";
 
 export default function CheckboxesGroup({ label, items, border, labelColor, boxBgColor, formItemsBgColor}) {
 
   const [checkboxItems, setCheckboxItems] = React.useState(items);
-  const [newItemName, setNewItemName] = React.useState('')
+  const [inputValue, setInputValue] = React.useState("");
+  const [showModal, setShowModal] = React.useState(false);
 
+  const handleAddItem = () => {
+    if (inputValue.trim() !== "") {
+      const newItems = inputValue.split(',').map(item => ({
+        name: item.trim(),
+        checked:false
+      }))
+      setCheckboxItems([...checkboxItems, ...newItems])
+      setInputValue("")
+      setShowModal(false)
+    }
+
+  }
   const handleChange = (index) => {
     setCheckboxItems((prev) =>
       prev.map((item, i) =>
         i === index ? { ...item, checked: !item.checked } : item
       )
     );
-  };
-
-  const handleAddItem = () => {
-    const newItemName = `Item ${checkboxItems.length + 1}`;
-    setCheckboxItems([...checkboxItems, { name: newItemName, checked: false }]);
   };
 
   return (
@@ -34,7 +43,6 @@ export default function CheckboxesGroup({ label, items, border, labelColor, boxB
                 <Checkbox
                   checked={item.checked}
                   onChange={() => handleChange(index)}
-                  
                 />
               }
               label={item.name}
@@ -42,10 +50,19 @@ export default function CheckboxesGroup({ label, items, border, labelColor, boxB
           ))}
         </FormGroup>
         
-        <button className="form-button" style={{color: boxBgColor, backgroundColor: labelColor}} onClick={handleAddItem}>
+        <button className="form-button" style={{color: boxBgColor, backgroundColor: labelColor}} onClick={() => setShowModal(true)}>
         <FaPen />
         Add Item
         </button>
+
+        { showModal && (
+          <ModalBox 
+            inputValue= {inputValue}
+            setInputValue= {setInputValue}
+            handleConfirm= {handleAddItem}
+            handleClose= {() => setShowModal(false)}
+          />
+        )}
         
       </div>
     </div>

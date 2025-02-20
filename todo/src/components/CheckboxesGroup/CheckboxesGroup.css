@@ -23,6 +23,7 @@
     border-bottom: #15648b solid;
 }
 
+
 .form-items {
     background-color: #eafaff;
     padding: 15px;
@@ -46,6 +47,7 @@
 }
 
 .form-button {
+    font-family: 'Sora';
     align-self: center;
     color: white; /* Cor do texto do botão */
     background-color: #15648b; /* Cor de fundo do botão */
